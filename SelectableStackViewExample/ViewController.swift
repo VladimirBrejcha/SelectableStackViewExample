@@ -13,10 +13,7 @@ final class ViewController: UIViewController {
         }
         
         (0...singleSelectionStackView.subviews.count - 1).forEach { number in
-            let random = Bool.random()
-            print(random)
-            singleSelectionStackView.select(random, at: number)
+            singleSelectionStackView.select(.random(), at: number)
         }
     }
 }
-

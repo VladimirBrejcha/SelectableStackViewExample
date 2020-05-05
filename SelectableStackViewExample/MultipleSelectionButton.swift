@@ -20,7 +20,7 @@ final class MultipleSelectionButton: UIButton, SelectionObservableView {
 
     private func sharedInit() {
         layer.cornerRadius = 16
-        backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.1)
+        backgroundColor = isSelected ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8) : #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.1)
         setTitleColor(.black, for: .normal)
         setTitleColor(.black, for: .selected)
         addTarget(self, action: #selector(touchUpInside(_:)), for: .touchUpInside)

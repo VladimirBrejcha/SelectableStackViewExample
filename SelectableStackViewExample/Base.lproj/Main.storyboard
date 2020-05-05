@@ -23,7 +23,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="72.5" height="40"/>
                                         <state key="normal" title="first"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgr-kc-rgL" customClass="MultipleSelectionButton" customModule="SelectableStackViewExample" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgr-kc-rgL" customClass="MultipleSelectionButton" customModule="SelectableStackViewExample" customModuleProvider="target">
                                         <rect key="frame" x="80.5" y="0.0" width="72.5" height="40"/>
                                         <state key="normal" title="second"/>
                                         <connections>
@@ -104,6 +104,18 @@
                                     <action selector="selectRandomTouchUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vVI-nQ-jTs"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SelectableStackView" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0g-Al-K6P">
+                                <rect key="frame" x="20" y="84" width="374" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1v-yk-KvD">
+                                <rect key="frame" x="20" y="125.5" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -115,13 +127,19 @@
                             <constraint firstItem="9s0-1Y-4e3" firstAttribute="top" secondItem="L6U-rB-7ot" secondAttribute="bottom" constant="10" id="ATk-Sp-1Ft"/>
                             <constraint firstItem="uSy-t0-Z6i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="H6N-pj-fKM"/>
                             <constraint firstItem="EdI-dX-1N7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Lnv-VH-pza"/>
+                            <constraint firstItem="U0g-Al-K6P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="d7N-ln-yok"/>
+                            <constraint firstItem="e1v-yk-KvD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="f8y-ov-VsO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9s0-1Y-4e3" secondAttribute="trailing" constant="20" id="fim-MX-dWH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uSy-t0-Z6i" secondAttribute="bottom" constant="20" id="g2E-RO-1xH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YrH-rJ-j9V" secondAttribute="trailing" constant="20" id="gFW-46-Ofl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e1v-yk-KvD" secondAttribute="trailing" constant="20" id="gG5-8G-XM9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uSy-t0-Z6i" secondAttribute="trailing" constant="20" id="i0P-GA-4dy"/>
                             <constraint firstItem="YrH-rJ-j9V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lw5-im-qId"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U0g-Al-K6P" secondAttribute="trailing" constant="20" id="vHt-rd-l52"/>
                             <constraint firstItem="L6U-rB-7ot" firstAttribute="top" secondItem="EdI-dX-1N7" secondAttribute="bottom" constant="60" id="wEC-ga-F2B"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L6U-rB-7ot" secondAttribute="trailing" constant="20" id="wr1-63-oal"/>
+                            <constraint firstItem="U0g-Al-K6P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="xHR-e1-0II"/>
+                            <constraint firstItem="e1v-yk-KvD" firstAttribute="top" secondItem="U0g-Al-K6P" secondAttribute="bottom" constant="10" id="z7u-pw-uhg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
