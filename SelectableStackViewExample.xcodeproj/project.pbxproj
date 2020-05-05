@@ -12,10 +12,10 @@
 		7E44B71124618CCF0010ED26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E44B70F24618CCF0010ED26 /* Main.storyboard */; };
 		7E44B71324618CD00010ED26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E44B71224618CD00010ED26 /* Assets.xcassets */; };
 		7E44B71624618CD00010ED26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E44B71424618CD00010ED26 /* LaunchScreen.storyboard */; };
-		7E44B71F24618F110010ED26 /* SelectableStackView in Frameworks */ = {isa = PBXBuildFile; productRef = 7E44B71E24618F110010ED26 /* SelectableStackView */; };
 		7E44B721246191260010ED26 /* MultipleSelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E44B720246191260010ED26 /* MultipleSelectionButton.swift */; };
 		7E44B7232461977F0010ED26 /* SingleSelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E44B7222461977F0010ED26 /* SingleSelectionButton.swift */; };
 		7ED331312461C92500779AEB /* preview.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7ED331302461C92500779AEB /* preview.gif */; };
+		7ED331342461CCDD00779AEB /* SelectableStackView in Frameworks */ = {isa = PBXBuildFile; productRef = 7ED331332461CCDD00779AEB /* SelectableStackView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E44B71F24618F110010ED26 /* SelectableStackView in Frameworks */,
+				7ED331342461CCDD00779AEB /* SelectableStackView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +92,7 @@
 			);
 			name = SelectableStackViewExample;
 			packageProductDependencies = (
-				7E44B71E24618F110010ED26 /* SelectableStackView */,
+				7ED331332461CCDD00779AEB /* SelectableStackView */,
 			);
 			productName = SelectableStackViewExample;
 			productReference = 7E44B70624618CCF0010ED26 /* SelectableStackViewExample.app */;
@@ -123,7 +123,7 @@
 			);
 			mainGroup = 7E44B6FD24618CCF0010ED26;
 			packageReferences = (
-				7E44B71D24618F110010ED26 /* XCRemoteSwiftPackageReference "SelectableStackView" */,
+				7ED331322461CCDD00779AEB /* XCRemoteSwiftPackageReference "SelectableStackView" */,
 			);
 			productRefGroup = 7E44B70724618CCF0010ED26 /* Products */;
 			projectDirPath = "";
@@ -358,20 +358,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7E44B71D24618F110010ED26 /* XCRemoteSwiftPackageReference "SelectableStackView" */ = {
+		7ED331322461CCDD00779AEB /* XCRemoteSwiftPackageReference "SelectableStackView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/VladimirBrejcha/SelectableStackView";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7E44B71E24618F110010ED26 /* SelectableStackView */ = {
+		7ED331332461CCDD00779AEB /* SelectableStackView */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7E44B71D24618F110010ED26 /* XCRemoteSwiftPackageReference "SelectableStackView" */;
+			package = 7ED331322461CCDD00779AEB /* XCRemoteSwiftPackageReference "SelectableStackView" */;
 			productName = SelectableStackView;
 		};
 /* End XCSwiftPackageProductDependency section */
