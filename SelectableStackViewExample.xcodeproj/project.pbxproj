@@ -28,7 +28,7 @@
 		7E44B71724618CD00010ED26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E44B720246191260010ED26 /* MultipleSelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionButton.swift; sourceTree = "<group>"; };
 		7E44B7222461977F0010ED26 /* SingleSelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectionButton.swift; sourceTree = "<group>"; };
-		7ED331302461C92500779AEB /* preview.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = preview.gif; path = ../../../../Downloads/preview.gif; sourceTree = "<group>"; };
+		7ED331302461C92500779AEB /* preview.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = preview.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +64,9 @@
 			children = (
 				7ED331302461C92500779AEB /* preview.gif */,
 				7E44B70924618CCF0010ED26 /* AppDelegate.swift */,
+				7E44B70D24618CCF0010ED26 /* ViewController.swift */,
 				7E44B720246191260010ED26 /* MultipleSelectionButton.swift */,
 				7E44B7222461977F0010ED26 /* SingleSelectionButton.swift */,
-				7E44B70D24618CCF0010ED26 /* ViewController.swift */,
 				7E44B70F24618CCF0010ED26 /* Main.storyboard */,
 				7E44B71224618CD00010ED26 /* Assets.xcassets */,
 				7E44B71424618CD00010ED26 /* LaunchScreen.storyboard */,
