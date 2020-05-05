@@ -1,20 +1,22 @@
-//
-//  ViewController.swift
-//  SelectableStackViewExample
-//
-//  Created by Владимир Королев on 05.05.2020.
 //  Copyright © 2020 VladimirBrejcha. All rights reserved.
-//
 
 import UIKit
+import SelectableStackView
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+final class ViewController: UIViewController {
+    @IBOutlet private weak var multipleSelectionStackView: SelectableStackView!
+    @IBOutlet private weak var singleSelectionStackView: SelectableStackView!
+    
+    @IBAction private func selectRandomTouchUp(_ sender: UIButton) {
+        (0...multipleSelectionStackView.subviews.count - 1).forEach { number in
+            multipleSelectionStackView.select(.random(), at: number)
+        }
+        
+        (0...singleSelectionStackView.subviews.count - 1).forEach { number in
+            let random = Bool.random()
+            print(random)
+            singleSelectionStackView.select(random, at: number)
+        }
     }
-
-
 }
 

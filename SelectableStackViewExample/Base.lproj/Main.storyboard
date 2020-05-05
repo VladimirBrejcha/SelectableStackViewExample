@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +11,129 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SelectableStackViewExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EdI-dX-1N7" customClass="SelectableStackView" customModule="SelectableStackView">
+                                <rect key="frame" x="10" y="564" width="394" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSk-5j-gUi" customClass="MultipleSelectionButton" customModule="SelectableStackViewExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="40"/>
+                                        <state key="normal" title="first"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgr-kc-rgL" customClass="MultipleSelectionButton" customModule="SelectableStackViewExample" customModuleProvider="target">
+                                        <rect key="frame" x="80.5" y="0.0" width="72.5" height="40"/>
+                                        <state key="normal" title="second"/>
+                                        <connections>
+                                            <action selector="rewre:" destination="upN-kd-oEj" eventType="touchUpInside" id="MPm-9g-GcB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTc-j4-7f6" customClass="MultipleSelectionButton" customModule="SelectableStackViewExample" customModuleProvider="target">
+                                        <rect key="frame" x="161" y="0.0" width="72" height="40"/>
+                                        <state key="normal" title="third"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fjo-F0-yYZ" customClass="MultipleSelectionButton" customModule="SelectableStackViewExample" customModuleProvider="target">
+                                        <rect key="frame" x="241" y="0.0" width="72.5" height="40"/>
+                                        <state key="normal" title="fourth"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heR-TV-0LE" customClass="MultipleSelectionButton" customModule="SelectableStackViewExample" customModuleProvider="target">
+                                        <rect key="frame" x="321.5" y="0.0" width="72.5" height="40"/>
+                                        <state key="normal" title="fifth"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="jgZ-qj-fpp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="multipleSelectionAllowed" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="noSelectionAllowed" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multiple selection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrH-rJ-j9V">
+                                <rect key="frame" x="20" y="536" width="374" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9s0-1Y-4e3" customClass="SelectableStackView" customModule="SelectableStackView">
+                                <rect key="frame" x="20" y="692" width="374" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIH-qh-byJ" customClass="SingleSelectionButton" customModule="SelectableStackViewExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="40"/>
+                                        <state key="normal" title="first"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffQ-7h-z8B" customClass="SingleSelectionButton" customModule="SelectableStackViewExample" customModuleProvider="target">
+                                        <rect key="frame" x="124.5" y="0.0" width="125" height="40"/>
+                                        <state key="normal" title="second"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3P-EM-cB7" customClass="SingleSelectionButton" customModule="SelectableStackViewExample" customModuleProvider="target">
+                                        <rect key="frame" x="249.5" y="0.0" width="124.5" height="40"/>
+                                        <state key="normal" title="third"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eBh-e1-tko"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="multipleSelectionAllowed" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Single selection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6U-rB-7ot">
+                                <rect key="frame" x="20" y="664" width="374" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSy-t0-Z6i">
+                                <rect key="frame" x="20" y="792" width="374" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="twd-co-HaZ"/>
+                                </constraints>
+                                <state key="normal" title="Random selection">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="selectRandomTouchUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vVI-nQ-jTs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EdI-dX-1N7" firstAttribute="top" secondItem="YrH-rJ-j9V" secondAttribute="bottom" constant="10" id="2Xa-2k-Jya"/>
+                            <constraint firstItem="L6U-rB-7ot" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2nX-Xl-XsX"/>
+                            <constraint firstItem="uSy-t0-Z6i" firstAttribute="top" secondItem="9s0-1Y-4e3" secondAttribute="bottom" constant="60" id="3Us-GE-nC7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EdI-dX-1N7" secondAttribute="trailing" constant="10" id="4Vz-ig-e2a"/>
+                            <constraint firstItem="9s0-1Y-4e3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5C4-t0-mmr"/>
+                            <constraint firstItem="9s0-1Y-4e3" firstAttribute="top" secondItem="L6U-rB-7ot" secondAttribute="bottom" constant="10" id="ATk-Sp-1Ft"/>
+                            <constraint firstItem="uSy-t0-Z6i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="H6N-pj-fKM"/>
+                            <constraint firstItem="EdI-dX-1N7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Lnv-VH-pza"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9s0-1Y-4e3" secondAttribute="trailing" constant="20" id="fim-MX-dWH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uSy-t0-Z6i" secondAttribute="bottom" constant="20" id="g2E-RO-1xH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YrH-rJ-j9V" secondAttribute="trailing" constant="20" id="gFW-46-Ofl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uSy-t0-Z6i" secondAttribute="trailing" constant="20" id="i0P-GA-4dy"/>
+                            <constraint firstItem="YrH-rJ-j9V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lw5-im-qId"/>
+                            <constraint firstItem="L6U-rB-7ot" firstAttribute="top" secondItem="EdI-dX-1N7" secondAttribute="bottom" constant="60" id="wEC-ga-F2B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L6U-rB-7ot" secondAttribute="trailing" constant="20" id="wr1-63-oal"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="multipleSelectionStackView" destination="EdI-dX-1N7" id="1Mw-d7-6lf"/>
+                        <outlet property="singleSelectionStackView" destination="9s0-1Y-4e3" id="rxA-PB-WlF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="upN-kd-oEj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
+            <point key="canvasLocation" x="27.536231884057973" y="-1.3392857142857142"/>
         </scene>
     </scenes>
 </document>

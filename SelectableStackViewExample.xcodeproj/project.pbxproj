@@ -3,27 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7E44B70A24618CCF0010ED26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E44B70924618CCF0010ED26 /* AppDelegate.swift */; };
-		7E44B70C24618CCF0010ED26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E44B70B24618CCF0010ED26 /* SceneDelegate.swift */; };
 		7E44B70E24618CCF0010ED26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E44B70D24618CCF0010ED26 /* ViewController.swift */; };
 		7E44B71124618CCF0010ED26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E44B70F24618CCF0010ED26 /* Main.storyboard */; };
 		7E44B71324618CD00010ED26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E44B71224618CD00010ED26 /* Assets.xcassets */; };
 		7E44B71624618CD00010ED26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E44B71424618CD00010ED26 /* LaunchScreen.storyboard */; };
+		7E44B71F24618F110010ED26 /* SelectableStackView in Frameworks */ = {isa = PBXBuildFile; productRef = 7E44B71E24618F110010ED26 /* SelectableStackView */; };
+		7E44B721246191260010ED26 /* MultipleSelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E44B720246191260010ED26 /* MultipleSelectionButton.swift */; };
+		7E44B7232461977F0010ED26 /* SingleSelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E44B7222461977F0010ED26 /* SingleSelectionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7E44B70624618CCF0010ED26 /* SelectableStackViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelectableStackViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E44B70924618CCF0010ED26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E44B70B24618CCF0010ED26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7E44B70D24618CCF0010ED26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7E44B71024618CCF0010ED26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E44B71224618CD00010ED26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E44B71524618CD00010ED26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E44B71724618CD00010ED26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E44B720246191260010ED26 /* MultipleSelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionButton.swift; sourceTree = "<group>"; };
+		7E44B7222461977F0010ED26 /* SingleSelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E44B71F24618F110010ED26 /* SelectableStackView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,12 +61,13 @@
 			isa = PBXGroup;
 			children = (
 				7E44B70924618CCF0010ED26 /* AppDelegate.swift */,
-				7E44B70B24618CCF0010ED26 /* SceneDelegate.swift */,
 				7E44B70D24618CCF0010ED26 /* ViewController.swift */,
 				7E44B70F24618CCF0010ED26 /* Main.storyboard */,
 				7E44B71224618CD00010ED26 /* Assets.xcassets */,
 				7E44B71424618CD00010ED26 /* LaunchScreen.storyboard */,
 				7E44B71724618CD00010ED26 /* Info.plist */,
+				7E44B720246191260010ED26 /* MultipleSelectionButton.swift */,
+				7E44B7222461977F0010ED26 /* SingleSelectionButton.swift */,
 			);
 			path = SelectableStackViewExample;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = SelectableStackViewExample;
+			packageProductDependencies = (
+				7E44B71E24618F110010ED26 /* SelectableStackView */,
+			);
 			productName = SelectableStackViewExample;
 			productReference = 7E44B70624618CCF0010ED26 /* SelectableStackViewExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 7E44B6FD24618CCF0010ED26;
+			packageReferences = (
+				7E44B71D24618F110010ED26 /* XCRemoteSwiftPackageReference "SelectableStackView" */,
+			);
 			productRefGroup = 7E44B70724618CCF0010ED26 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E44B70E24618CCF0010ED26 /* ViewController.swift in Sources */,
+				7E44B721246191260010ED26 /* MultipleSelectionButton.swift in Sources */,
+				7E44B7232461977F0010ED26 /* SingleSelectionButton.swift in Sources */,
 				7E44B70A24618CCF0010ED26 /* AppDelegate.swift in Sources */,
-				7E44B70C24618CCF0010ED26 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75A4KV3RQQ;
 				INFOPLIST_FILE = SelectableStackViewExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75A4KV3RQQ;
 				INFOPLIST_FILE = SelectableStackViewExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E44B71D24618F110010ED26 /* XCRemoteSwiftPackageReference "SelectableStackView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/VladimirBrejcha/SelectableStackView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E44B71E24618F110010ED26 /* SelectableStackView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E44B71D24618F110010ED26 /* XCRemoteSwiftPackageReference "SelectableStackView" */;
+			productName = SelectableStackView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7E44B6FE24618CCF0010ED26 /* Project object */;
 }
