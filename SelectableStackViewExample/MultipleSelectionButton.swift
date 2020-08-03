@@ -3,8 +3,8 @@
 import UIKit
 import SelectableStackView
 
-final class MultipleSelectionButton: UIButton, SelectionObservableView {
-    var selectionObserver: ((SelectionObservableView) -> Void)?
+final class MultipleSelectionButton: UIButton, ObservableBySelectableStackView {
+    var observer: ((ObservableBySelectableStackView) -> Void)?
     var handlingSelfSelection: Bool = false
     
     override var isSelected: Bool {
@@ -27,7 +27,7 @@ final class MultipleSelectionButton: UIButton, SelectionObservableView {
     }
     
     @objc private func touchUpInside(_ sender: MultipleSelectionButton) {
-        selectionObserver?(self)
+        observer?(self)
     }
 }
 

@@ -3,8 +3,8 @@
 import UIKit
 import SelectableStackView
 
-final class SingleSelectionButton: UIButton, SelectionObservableView {
-    var selectionObserver: ((SelectionObservableView) -> Void)?
+final class SingleSelectionButton: UIButton, ObservableBySelectableStackView {
+    var observer: ((ObservableBySelectableStackView) -> Void)?
     var handlingSelfSelection: Bool = false
     
     required init?(coder: NSCoder) {
@@ -20,6 +20,6 @@ final class SingleSelectionButton: UIButton, SelectionObservableView {
     }
     
     @objc private func touchUpInside(_ sender: SingleSelectionButton) {
-        selectionObserver?(self)
+        observer?(self)
     }
 }
